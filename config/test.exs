@@ -12,7 +12,7 @@ config :retroflect, Retroflect.Repo,
   username: "postgres",
   password: "postgres",
   database: "retroflect_test#{System.get_env("MIX_TEST_PARTITION")}",
-  hostname: "localhost",
+  hostname: System.get_env("DATABASE_HOSTNAME", "localhost"),
   pool: Ecto.Adapters.SQL.Sandbox,
   pool_size: 10
 

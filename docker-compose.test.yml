@@ -1,0 +1,20 @@
+version: "3"
+services:
+  # https://github.com/docker-library/docs/blob/master/postgres/README.md
+  db:
+    image: retroflect-db:latest
+    ports:
+      - 5432:5432
+    hostname: db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  test:
+    image: test:latest
+    environment:
+      - MIX_ENV=test
+      - DATABASE_HOST=db
+      - DATABASE_HOSTNAME=db
+    depends_on:
+      - db
