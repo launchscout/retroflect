@@ -1,0 +1,16 @@
+main .container {
+  background-color: #686f9a;
+}
+.header {
+  background-color: #686f9a;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header-text {
+    color: #f2ce00;
+    background-color: #7a5ccc;
+    height: 5rem;
+    width: 60%;
+  }
+}
