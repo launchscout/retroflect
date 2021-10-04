@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "deploy": "cd .. && mix assets.deploy && rm -f _build/esbuild"
+  },
+  "devDependencies": {
+    "harmonium": "^7.0.1"
+  }
+}
