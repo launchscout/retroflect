@@ -47,12 +47,6 @@ ARG RELEASE=prod
 # Name of app, used for directories
 ARG APP_NAME=retroflective
 
-# OS user that app runs under
-ARG APP_USER=postgres
-
-# OS group that app runs under
-ARG APP_GROUP="$APP_USER"
-
 # Runtime dir
 ARG APP_DIR=/app
 
