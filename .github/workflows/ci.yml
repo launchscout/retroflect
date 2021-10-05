@@ -16,4 +16,4 @@ jobs:
           version: v0.5.10
       - uses: actions/checkout@v2
       - name: run tests
-        run: earthly +all
+        run: earthly -P +all
