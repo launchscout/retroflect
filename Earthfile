@@ -58,6 +58,7 @@ ARG https_proxy=$http_proxy
 all:
     BUILD +test
     BUILD +run-tests
+    BUILD +code-quality
 
 # Fetch OS build dependencies
 os-deps:
@@ -137,6 +138,14 @@ run-tests:
             --compose docker-compose.yml
         RUN docker-compose run test mix test
     END
+
+code-quality:
+    FROM +test
+
+    COPY .formatter.exs ./.formatter.exs
+    COPY .credo.exs ./.credo.exs
+
+    RUN mix do format --check-formatted, credo --strict
 
 assets:
     FROM +deps
