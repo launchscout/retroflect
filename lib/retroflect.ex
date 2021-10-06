@@ -1,4 +1,6 @@
 defmodule Retroflect do
+  use Boundary, deps: [], exports: [Accounts, Accounts.User, AccountsFixtures]
+
   @moduledoc """
   Retroflect keeps the contexts that define your domain
   and business logic.

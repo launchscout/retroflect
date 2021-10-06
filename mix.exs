@@ -7,7 +7,7 @@ defmodule Retroflect.MixProject do
       version: "0.1.0",
       elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
-      compilers: Mix.compilers(),
+      compilers: [:boundary | Mix.compilers()],
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
       deps: deps()
@@ -49,7 +49,10 @@ defmodule Retroflect.MixProject do
       {:telemetry_poller, "~> 1.0"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:dart_sass, "~> 0.2", runtime: Mix.env() == :dev}
+      {:dart_sass, "~> 0.2", runtime: Mix.env() == :dev},
+      {:boundary, "~> 0.8.0", runtime: false},
+      {:norm, "~> 0.13"},
+      {:credo, "~> 1.5", only: [:dev, :test], runtime: false}
     ]
   end
 
