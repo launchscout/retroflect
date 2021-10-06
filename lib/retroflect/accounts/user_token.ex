@@ -1,4 +1,7 @@
 defmodule Retroflect.Accounts.UserToken do
+  @moduledoc """
+  Functions for creating and validating session tokens.
+  """
   use Ecto.Schema
   import Ecto.Query
 
@@ -173,6 +176,7 @@ defmodule Retroflect.Accounts.UserToken do
   end
 
   def user_and_contexts_query(user, [_ | _] = contexts) do
-    from t in Retroflect.Accounts.UserToken, where: t.user_id == ^user.id and t.context in ^contexts
+    from t in Retroflect.Accounts.UserToken,
+      where: t.user_id == ^user.id and t.context in ^contexts
   end
 end
