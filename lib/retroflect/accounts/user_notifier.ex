@@ -1,4 +1,8 @@
 defmodule Retroflect.Accounts.UserNotifier do
+  @moduledoc """
+    This module contains defining various notifications sent to users.
+  """
+
   import Swoosh.Email
 
   alias Retroflect.Mailer
