@@ -15,8 +15,7 @@ config :retroflect, RetroflectWeb.Endpoint,
   url: [host: "localhost"],
   render_errors: [view: RetroflectWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: Retroflect.PubSub,
-  live_view: [signing_salt: "wNcV8ZiN"],
-  force_ssl: [hsts: true]
+  live_view: [signing_salt: "wNcV8ZiN"]
 
 config :dart_sass,
   version: "1.39.0",
