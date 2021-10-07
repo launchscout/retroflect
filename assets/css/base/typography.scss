@@ -1,0 +1,52 @@
+body {
+  font-family: var(--body-font);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font);
+}
+
+// clamp sizing - clamp(minimum, preferred, maximum);
+h1 {
+  font-size: clamp(2em, 3vw, 3.5em);
+}
+
+h2 {
+  font-size: clamp(1.6em, 2.6vw, 3em);
+}
+
+h3 {
+  font-size: clamp(1.4em, 2.2vw, 2.6em);
+}
+
+h4 {
+  font-size: clamp(1.2em, 2vw, 2.4em);
+}
+
+h5 {
+  font-size: clamp(1.1em, 1.8vw, 2.2em);
+}
+
+h6 {
+  font-size: clamp(1em, 1.5vw, 2em);
+}
+
+p {
+  font-size: clamp(.9em, 1.5vw, 1em);
+  line-height: 1.4;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+i {
+  font-style: italic;
+}
