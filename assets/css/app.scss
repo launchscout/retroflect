@@ -1,2 +1,23 @@
+//BASE STYLES
 @import
-"./base/reset";
+"./base/reset",
+"./base/variables",
+"./base/typography";
+
+//LAYOUT STYLES
+@import
+"./layout/base";
+
+//MODULES STYLES
+@import
+"./modules/links",
+"./modules/cards",
+"./modules/inputs",
+"./modules/lists",
+"./modules/nav";
+
+//UTILITIES STYLES
+@import
+"./states/utilities";
+
+//THEMES STYLES
