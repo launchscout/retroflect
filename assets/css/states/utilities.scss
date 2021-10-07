@@ -26,6 +26,25 @@
 
 //MARGIN
 .u-push {
+    margin: var(--pad);
+
+    &--xs {
+        margin: var(--pad-xs);
+    }
+
+    &--sm {
+        margin: var(--pad-sm);
+    }
+
+    &--lg {
+        margin: var(--pad-lg);
+    }
+
+    &--xlg {
+        margin: var(--pad-xlg);
+    }
+
+
     &-bottom {
         margin-bottom: var(--pad);
 
@@ -116,4 +135,50 @@
 }
 .u-right {
     text-align: right;
+}
+
+//Display
+.u-flex {
+  display: flex;
+}
+//COLORS
+.color {
+  &--light {
+    &-1 {
+      background-color: var(--light-color-1);
+    }
+    &-2 {
+      background-color: var(--light-color-2);
+    }
+  }
+
+  &--medium {
+    &-1 {
+      background-color: var(--medium-color-1);
+    }
+    &-2 {
+      background-color: var(--medium-color-2);
+    }
+  }
+
+  &--dark {
+    &-1 {
+      background-color: var(--dark-color-1);
+    }
+    &-2 {
+      background-color: var(--dark-color-2);
+    }
+  }
+
+  &--red {
+    background-color: var(--red);
+  }
+
+  &--yellow {
+    background-color: var(--yellow);
+  }
+
+  &--green {
+    background-color: var(--green);
+  }
 }
