@@ -6,7 +6,7 @@ defmodule Retroflect.Accounts do
   import Ecto.Query, warn: false
   alias Retroflect.Repo
 
-  alias Retroflect.Accounts.{User, UserToken, UserNotifier}
+  alias Retroflect.Accounts.{User, UserNotifier, UserToken}
 
   ## Database getters
 
