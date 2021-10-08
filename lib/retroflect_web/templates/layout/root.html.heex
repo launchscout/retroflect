@@ -10,9 +10,34 @@
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
   <body>
-    <header>
-      
-    </header>
-    <%= @inner_content %>
+    <aside>
+      <nav class="nav">
+        <div class="logo">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    viewBox="0 0 181.5 269.4" style="enable-background:new 0 0 181.5 269.4;" xml:space="preserve">
+            <style type="text/css">
+              .st0{fill:none;stroke:#E7F4FC;stroke-width:10;stroke-linecap:round;stroke-miterlimit:10;}
+              .st1{fill:#D7EBFC;}
+              .st2{fill:#C3BCEB;}
+              .st3{fill:#5E2EFD;}
+            </style>
+            <line class="st0" x1="88.6" y1="246.5" x2="88.6" y2="17.6"/>
+            <g>
+              <circle class="st1" cx="47.7" cy="58.5" r="21.7"/>
+              <circle class="st2" cx="47.7" cy="132.1" r="21.7"/>
+              <circle class="st3" cx="47.7" cy="205.7" r="21.7"/>
+            </g>
+            <g>
+              <circle class="st1" cx="129.5" cy="205.7" r="21.7"/>
+              <circle class="st2" cx="129.5" cy="132.1" r="21.7"/>
+              <circle class="st3" cx="129.5" cy="58.5" r="21.7"/>
+            </g>
+          </svg>
+        </div>
+      </nav>
+    </aside>
+    <main>
+      <%= @inner_content %>
+    </main>
   </body>
 </html>

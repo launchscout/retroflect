@@ -140,7 +140,20 @@
 //Display
 .u-flex {
   display: flex;
+  flex-wrap: wrap;
 }
+.u-grid {
+    display: grid;
+
+    &--2 {
+        @extend .u-grid;
+
+        @media (min-width: $screen-desktop) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
 //COLORS
 .color {
   &--light {
@@ -168,6 +181,10 @@
     &-2 {
       background-color: var(--dark-color-2);
     }
+  }
+
+  &--white {
+    background-color: var(--white);
   }
 
   &--red {

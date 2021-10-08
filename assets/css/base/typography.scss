@@ -2,6 +2,7 @@ body {
   font-family: var(--body-font);
   font-size: 16px;
   font-weight: 300;
+  color: var(--dark-color-1);
 }
 
 h1,
@@ -10,24 +11,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--header-font);
+  font-family: var(--body-font);
+  font-weight: 300;
 }
 
 // clamp sizing - clamp(minimum, preferred, maximum);
 h1 {
-  font-size: clamp(2em, 3vw, 3.5em);
+    font-family: var(--header-font);
+  font-size: clamp(1.8em, 3vw, 3em);
+  font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(1.6em, 2.6vw, 3em);
+  font-size: clamp(1.6em, 2.6vw, 2.8em);
+  color: var(--medium-color-2);
 }
 
 h3 {
   font-size: clamp(1.4em, 2.2vw, 2.6em);
+  color: var(--medium-color-2);
 }
 
 h4 {
   font-size: clamp(1.2em, 2vw, 2.4em);
+  color: var(--medium-color-2);
 }
 
 h5 {
@@ -41,6 +48,7 @@ h6 {
 p {
   font-size: clamp(.9em, 1.5vw, 1em);
   line-height: 1.4;
+  font-weight: 400;
 }
 
 b, strong {

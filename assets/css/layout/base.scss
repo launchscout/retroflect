@@ -1,0 +1,60 @@
+body {
+    background-color: var(--white);
+    width: 100vw;
+    height: 100vh;
+
+    @media (min-width: $screen-tablet) {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+    }
+}
+
+aside {
+    position: relative;
+    width: 100vh;
+    height: auto;
+    background-color: var(--dark-color-1);
+
+    @media (min-width: $screen-tablet) {
+        width: 8em;
+        height: 100vh;
+    }
+
+    .nav {
+        padding: var(--pad-sm);
+        box-sizing: border-box;
+        width: 100vw;
+        height: auto;
+        background-color: var(--dark-color-1);
+
+        @media (min-width: $screen-tablet) {
+            width: 8em;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+        }
+    }
+
+    .logo {
+        max-width: 3em;
+
+        @media (min-width: $screen-tablet) {
+            max-width: 70%;
+        margin: 0 auto;
+        }
+    }
+}
+
+main {
+    position: relative;
+    box-sizing: content-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.container {
+    padding: var(--pad);
+    box-sizing: content-box;
+    width: calc(100% - calc(var(--pad) * 2));
+}
