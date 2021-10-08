@@ -1,6 +1,10 @@
 .card {
+    width: calc(100% - clac( var(--pad) * 2));
+    box-sizing: border-box;
+    background-color: var(--light-color-2);
     padding: var(--pad);
     margin: var(--pad);
-    box-shadow: 0px 0px 80px rgba(33, 35, 36, 0.103);
+    //box-shadow: 0px 0px 80px rgba(33, 35, 36, 0.103);
     border-radius: 8px;
 }
+
