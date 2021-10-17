@@ -17,12 +17,6 @@ defmodule RetroflectWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", RetroflectWeb do
-    pipe_through :browser
-
-    get "/", PageController, :index
-  end
-
   # Other scopes may use custom stacks.
   # scope "/api", RetroflectWeb do
   #   pipe_through :api
@@ -74,6 +68,7 @@ defmodule RetroflectWeb.Router do
   scope "/", RetroflectWeb do
     pipe_through [:browser, :require_authenticated_user]
 
+    live "/", PageLive, :index
     get "/users/settings", UserSettingsController, :edit
     put "/users/settings", UserSettingsController, :update
     get "/users/settings/confirm_email/:token", UserSettingsController, :confirm_email
@@ -89,5 +84,4 @@ defmodule RetroflectWeb.Router do
     get "/users/confirm/:token", UserConfirmationController, :edit
     post "/users/confirm/:token", UserConfirmationController, :update
   end
-
 end
