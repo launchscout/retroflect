@@ -68,7 +68,6 @@ defmodule RetroflectWeb.Router do
   scope "/", RetroflectWeb do
     pipe_through [:browser, :require_authenticated_user]
 
-    live "/", PageLive, :index
     get "/users/settings", UserSettingsController, :edit
     put "/users/settings", UserSettingsController, :update
     get "/users/settings/confirm_email/:token", UserSettingsController, :confirm_email
@@ -77,6 +76,7 @@ defmodule RetroflectWeb.Router do
   scope "/", RetroflectWeb do
     pipe_through [:browser]
 
+    live "/", PageLive, :index
     delete "/users/log_out", UserSessionController, :delete
     get "/users/confirm", UserConfirmationController, :new
     get "/style-guide", StyleGuideController, :index

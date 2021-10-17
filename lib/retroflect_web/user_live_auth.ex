@@ -7,7 +7,7 @@ defmodule RetroflectWeb.UserLiveAuth do
   Module to add current user to session, or redirect to /users/log_in if not logged in
   """
 
-  def mount(params, %{"current_user_id" => user_id} = _session, socket) do
+  def mount(_params, %{"current_user_id" => user_id} = _session, socket) do
     socket =
       assign_new(socket, :current_user, fn ->
         Accounts.get_user!(user_id)
