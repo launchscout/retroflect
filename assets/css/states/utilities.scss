@@ -1,157 +1,169 @@
 .u-contain {
-    padding: var(--pad);
-    max-width: 1200px;
+  padding: var(--pad);
+  max-width: 1200px;
 }
 
 //PADDING
 .padding {
-    padding: var(--pad);
+  padding: var(--pad);
 
-    &--xs {
-        padding: var(--pad-xs);
-    }
+  &--xs {
+    padding: var(--pad-xs);
+  }
 
-    &--sm {
-        padding: var(--pad-sm);
-    }
+  &--sm {
+    padding: var(--pad-sm);
+  }
 
-    &--lg {
-        padding: var(--pad-lg);
-    }
+  &--lg {
+    padding: var(--pad-lg);
+  }
 
-    &--xlg {
-        padding: var(--pad-xlg);
-    }
+  &--xlg {
+    padding: var(--pad-xlg);
+  }
 }
 
 //MARGIN
 .u-push {
-    margin: var(--pad);
+  margin: var(--pad);
+
+  &--xs {
+    margin: var(--pad-xs);
+  }
+
+  &--sm {
+    margin: var(--pad-sm);
+  }
+
+  &--lg {
+    margin: var(--pad-lg);
+  }
+
+  &--xlg {
+    margin: var(--pad-xlg);
+  }
+
+  &__bottom {
+    margin-bottom: var(--pad);
 
     &--xs {
-        margin: var(--pad-xs);
+      margin-bottom: var(--pad-xs);
     }
 
     &--sm {
-        margin: var(--pad-sm);
+      margin-bottom: var(--pad-sm);
     }
 
     &--lg {
-        margin: var(--pad-lg);
+      margin-bottom: var(--pad-lg);
     }
 
     &--xlg {
-        margin: var(--pad-xlg);
+      margin-bottom: var(--pad-xlg);
+    }
+  }
+
+  &__top {
+    margin-top: var(--pad);
+
+    &--xs {
+      margin-top: var(--pad-xs);
     }
 
-
-    &-bottom {
-        margin-bottom: var(--pad);
-
-        &--xs {
-            margin-bottom: var(--pad-xs);
-        }
-
-        &--sm {
-            margin-bottom: var(--pad-sm);
-        }
-
-        &--lg {
-            margin-bottom: var(--pad-lg);
-        }
-
-        &--xlg {
-            margin-bottom: var(--pad-xlg);
-        }
+    &--sm {
+      margin-top: var(--pad-sm);
     }
 
-    &-top {
-        margin-top: var(--pad);
-
-        &--xs {
-            margin-top: var(--pad-xs);
-        }
-
-        &--sm {
-            margin-top: var(--pad-sm);
-        }
-
-        &--lg {
-            margin-top: var(--pad-lg);
-        }
-
-        &--xlg {
-            margin-top: var(--pad-xlg);
-        }
+    &--lg {
+      margin-top: var(--pad-lg);
     }
 
-    &-left {
-        margin-left: var(--pad);
-
-        &--xs {
-            margin-left: var(--pad-xs);
-        }
-
-        &--sm {
-            margin-left: var(--pad-sm);
-        }
-
-        &--lg {
-            margin-left: var(--pad-lg);
-        }
-
-        &--xlg {
-            margin-left: var(--pad-xlg);
-        }
+    &--xlg {
+      margin-top: var(--pad-xlg);
     }
-    &-right {
-        margin-right: var(--pad);
+  }
 
-        &--xs {
-            margin-right: var(--pad-xs);
-        }
+  &__left {
+    margin-left: var(--pad);
 
-        &--sm {
-            margin-right: var(--pad-sm);
-        }
-
-        &--lg {
-            margin-right: var(--pad-lg);
-        }
-
-        &--xlg {
-            margin-right: var(--pad-xlg);
-        }
+    &--xs {
+      margin-left: var(--pad-xs);
     }
 
+    &--sm {
+      margin-left: var(--pad-sm);
+    }
+
+    &--lg {
+      margin-left: var(--pad-lg);
+    }
+
+    &--xlg {
+      margin-left: var(--pad-xlg);
+    }
+  }
+  &__right {
+    margin-right: var(--pad);
+
+    &--xs {
+      margin-right: var(--pad-xs);
+    }
+
+    &--sm {
+      margin-right: var(--pad-sm);
+    }
+
+    &--lg {
+      margin-right: var(--pad-lg);
+    }
+
+    &--xlg {
+      margin-right: var(--pad-xlg);
+    }
+  }
 }
 
 //ALIGNMENT
 .u-center {
-    text-align: center;
+  text-align: center;
 }
 .u-left {
-    text-align: left;
+  text-align: left;
 }
 .u-right {
-    text-align: right;
+  text-align: right;
 }
 
 //Display
 .u-flex {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row nowrap;
+
+  &__item {
+    &--grow {
+      flex-grow: 1;
+    }
+  }
+
+  &__column {
+    flex-direction: column;
+  }
+
+  &__wrap {
+    flex-wrap: wrap;
+  }
 }
 .u-grid {
-    display: grid;
+  display: grid;
 
-    &--2 {
-        @extend .u-grid;
+  &--2 {
+    @extend .u-grid;
 
-        @media (min-width: $screen-desktop) {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    @media (min-width: $screen-desktop) {
+      grid-template-columns: repeat(2, 1fr);
     }
+  }
 }
 
 //COLORS
