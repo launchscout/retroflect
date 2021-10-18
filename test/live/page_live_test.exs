@@ -1,4 +1,4 @@
-defmodule RetroflectWeb.PageControllerTest do
+defmodule RetroflectWeb.PageLiveTest do
   use RetroflectWeb.ConnCase
 
   setup :register_and_log_in_user
