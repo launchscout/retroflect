@@ -1,10 +1,10 @@
-<ul>
-<%= if @current_user do %>
-  <li><%= @current_user.email %></li>
-  <li><%= link "Settings", to: Routes.user_settings_path(@conn, :edit) %></li>
-  <li><%= link "Log out", to: Routes.user_session_path(@conn, :delete), method: :delete %></li>
-<% else %>
-  <li><%= link "Register", to: Routes.user_registration_path(@conn, :new) %></li>
-  <li><%= link "Log in", to: Routes.user_session_path(@conn, :new) %></li>
-<% end %>
+<ul class="u-flex">
+  <%= if @current_user do %>
+    <li class="u-flex__item--grow"><%= @current_user.email %></li>
+    <li><%= link "Settings", to: Routes.user_settings_path(RetroflectWeb.Endpoint, :edit) %></li>
+    <li class="u-push__left--sm u-push__right--sm"><%= link "Log out", to: Routes.user_session_path(RetroflectWeb.Endpoint, :delete), method: :delete %></li>
+  <% else %>
+    <li><%= link "Register", to: Routes.user_registration_path(RetroflectWeb.Endpoint, :new) %></li>
+    <li class="u-push__left--sm u-push__right--sm"><%= link "Log in", to: Routes.user_session_path(RetroflectWeb.Endpoint, :new) %></li>
+  <% end %>
 </ul>

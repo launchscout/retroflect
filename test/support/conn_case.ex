@@ -61,6 +61,7 @@ defmodule RetroflectWeb.ConnCase do
 
     conn
     |> Phoenix.ConnTest.init_test_session(%{})
+    |> Plug.Conn.put_session(:current_user_id, user.id)
     |> Plug.Conn.put_session(:user_token, token)
   end
 end
