@@ -1,0 +1,11 @@
+a {
+  border-bottom: 1px solid var(--dark-color-1);
+  color: var(--dark-color-1);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--medium-color-1);
+    border-bottom: 1px solid var(--medium-color-1);
+    cursor: pointer;
+  }
+}
