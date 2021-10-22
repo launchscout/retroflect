@@ -1,0 +1,28 @@
+.buttons, button {
+  padding: var(--pad-xs) var(--pad-sm);
+  outline: none;
+  border: none;
+
+  &--primary {
+    background-color: var(--medium-color-1);
+    color: var(--white);
+
+    &:hover {
+      background-color: var(--dark-color-1);
+      cursor: pointer;
+    }
+  }
+
+  &--secondary {
+    @extend .buttons;
+    background-color: var(--white);
+    border: 1px solid var(--medium-color-2);
+    color: var(--medium-color-2);
+
+    &:hover {
+      background-color: var(--medium-color-2);
+      color: var(--white);
+      cursor: pointer;
+    }
+  }
+}

@@ -84,15 +84,63 @@
 <div class="u-grid--2">
   <div class="card">
     <h2 class="u-push__bottom--xxs">Inputs</h2>
-      <input type="text"
-      <input type="date">
-      <input type="password">
-      <input type="submit">
-
+    <div class="u-flex">
+      <div class="u-push__right--xs">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name"/>
+      </div>
+      <div class="u-push__right--xs">
+        <label for="date">Date</label>
+        <input type="date"/>
+      </div>
+      <div class="u-push__right--xs">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password"/>
+      </div>
+    </div>
+    <div>
+      <select>
+        <option value="0">Select a color:</option>
+        <option value="1">Green</option>
+        <option value="2">Yellow</option>
+        <option value="2">Red</option>
+      </select>
+    </div>
+    <div class="u-flex">
+      <div class="u-push__right--xs">
+        <label class="checkmark-container">Default
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+      <div class="u-push__right--xs">
+        <label class="checkmark-container">Green
+          <input type="checkbox" checked="checked">
+          <span class="checkmark checkmark--green"></span>
+        </label>
+      </div>
+      <div class="u-push__right--xs">
+        <label class="checkmark-container">Red
+          <input type="checkbox" checked="checked">
+          <span class="checkmark checkmark--red"></span>
+        </label>
+      </div>
+      <div class="u-push__right--xs">
+        <label class="checkmark-container">Yellow
+          <input type="checkbox" checked="checked">
+          <span class="checkmark checkmark--yellow"></span>
+        </label>
+      </div>
+    </div>
+    <div class="u-push__top--sm">
+      <input type="submit"/>
+    </div>
   </div>
 
   <div class="card">
     <h2 class="u-push__bottom--xxs">Links</h2>
+    <button class="buttons buttons--primary u-push__right--sm">Primary Button</button>
+    <button class="buttons--secondary u-push__right--sm">Secondary Button</button>
     <a href="#">Links </a>
   </div>
 </div>
