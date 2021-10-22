@@ -6,6 +6,9 @@
 //PADDING
 .padding {
   padding: var(--pad);
+  &--xxs {
+    padding: var(--pad-xxs);
+  }
 
   &--xs {
     padding: var(--pad-xs);
@@ -28,6 +31,10 @@
 .u-push {
   margin: var(--pad);
 
+  &--xxs {
+    margin: var(--pad-xxs);
+  }
+
   &--xs {
     margin: var(--pad-xs);
   }
@@ -46,6 +53,10 @@
 
   &__bottom {
     margin-bottom: var(--pad);
+
+    &--xxs {
+      margin-bottom: var(--pad-xxs);
+    }
 
     &--xs {
       margin-bottom: var(--pad-xs);
@@ -67,6 +78,10 @@
   &__top {
     margin-top: var(--pad);
 
+    &--xxs {
+      margin-top: var(--pad-xxs);
+    }
+
     &--xs {
       margin-top: var(--pad-xs);
     }
@@ -87,6 +102,10 @@
   &__left {
     margin-left: var(--pad);
 
+    &--xxs {
+      margin-left: var(--pad-xxs);
+    }
+
     &--xs {
       margin-left: var(--pad-xs);
     }
@@ -105,6 +124,10 @@
   }
   &__right {
     margin-right: var(--pad);
+
+    &--xxs {
+      margin-right: var(--pad-xxs);
+    }
 
     &--xs {
       margin-right: var(--pad-xs);

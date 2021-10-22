@@ -1,0 +1,20 @@
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=checkbox],
+input[type=submit]  {
+  border: 1px solid lightgrey;
+  padding:10px;
+  margin:10px 0;
+  background-color: #e7f0fe;
+}
+
+input[type=date] {
+  padding:7.5px;
+}
+
+input[type=submit] {
+  padding: 15px;
+  color: var(--white);
+  background-color: var(--medium-color-1) !important;
+}
