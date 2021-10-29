@@ -6,5 +6,9 @@
     margin: var(--pad);
     //box-shadow: 0px 0px 80px rgba(33, 35, 36, 0.103);
     border-radius: 8px;
-}
 
+    &--dashboard {
+      width: 42%;
+      height: 350px;
+    }
+}

@@ -7,4 +7,29 @@
     phx-click="lv:clear-flash"
     phx-value-key="error"><%= live_flash(@flash, :error) %></p>
     <%= @inner_content %>
+    <h1> Dashboard </h1>
+    <div class="u-flex u-flex__wrap">
+      <div class="card card--dashboard">
+        <div class="u-flex u-flex__justified-content">
+          <h2>Team</h2>
+          <button class="buttons buttons--secondary"> New </button>
+        </div>
+      </div>
+      <div class="card card--dashboard">
+        <div class="u-flex u-flex__justified-content">
+          <h2>Projects</h2>
+          <button class="buttons buttons--secondary"> New </button>
+        </div>
+      </div>
+      <div class="card card--dashboard">
+        <div class="u-flex u-flex__justified-content">
+          <h2>Schedule</h2>
+        </div>
+      </div>
+      <div class="card card--dashboard">
+        <div class="u-flex u-flex__justified-content">
+          <h2>More</h2>
+        </div>
+      </div>
+    </div>
   </main>
