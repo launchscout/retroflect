@@ -176,6 +176,14 @@
   &__wrap {
     flex-wrap: wrap;
   }
+
+  &__justified-content {
+    justify-content: space-between;
+  }
+
+  &__wrap {
+    flex-wrap: wrap;
+  }
 }
 .u-grid {
   display: grid;
