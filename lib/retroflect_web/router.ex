@@ -80,6 +80,7 @@ defmodule RetroflectWeb.Router do
     delete "/users/log_out", UserSessionController, :delete
     get "/users/confirm", UserConfirmationController, :new
     get "/style-guide", StyleGuideController, :index
+    get "/retro", RetroController, :index
     post "/users/confirm", UserConfirmationController, :create
     get "/users/confirm/:token", UserConfirmationController, :edit
     post "/users/confirm/:token", UserConfirmationController, :update
