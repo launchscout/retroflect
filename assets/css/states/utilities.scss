@@ -187,6 +187,7 @@
 }
 .u-grid {
   display: grid;
+  grid-gap: var(--pad);
 
   &--2 {
     @extend .u-grid;

@@ -18,31 +18,32 @@ h6 {
 // clamp sizing - clamp(minimum, preferred, maximum);
 h1 {
     font-family: var(--header-font);
-  font-size: clamp(1.8em, 3vw, 3em);
-  font-weight: 700;
+    font-size: clamp(1.8em, 3vw, 2.2em);
+    font-weight: 700;
 }
 
 h2 {
-  font-size: clamp(1.6em, 2.6vw, 2.8em);
+  font-size: clamp(1.4em, 2.6vw, 1.8em);
   color: var(--medium-color-2);
 }
 
 h3 {
-  font-size: clamp(1.4em, 2.2vw, 2.6em);
-  color: var(--medium-color-2);
+  font-size: clamp(1.1em, 2.2vw, 1.2em);
+  font-weight: 500;
+  color: var(--medium-color-1);
 }
 
 h4 {
-  font-size: clamp(1.2em, 2vw, 2.4em);
+  font-size: clamp(1.2em, 2vw, 1.6em);
   color: var(--medium-color-2);
 }
 
 h5 {
-  font-size: clamp(1.1em, 1.8vw, 2.2em);
+  font-size: clamp(1.1em, 1.8vw, 1.4em);
 }
 
 h6 {
-  font-size: clamp(1em, 1.5vw, 2em);
+  font-size: clamp(1em, 1.5vw, 1.2em);
 }
 
 p {

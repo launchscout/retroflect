@@ -1,0 +1,28 @@
+.icon {
+    &--light-1 {
+        fill: var(--light-color-1);
+    }
+    &--light-2 {
+        fill: var(--light-color-2);
+    }
+    &--medium-1 {
+        fill: var(--medium-color-1);
+    }
+    &--medium-2 {
+        fill: var(--medium-color-2);
+    }
+    &--dark-1 {
+        fill: var(--dark-color-1);
+    }
+    &--dark-2 {
+        fill: var(--dark-color-2);
+    }
+
+    &--stroke-light-1 {
+        fill: none;
+        stroke: var(--light-color-2);
+        stroke-width: 10;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+    }
+}

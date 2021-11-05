@@ -1,0 +1,10 @@
+.dashboard{ 
+    &--admin {
+
+        @media (min-width: $screen-desktop) {
+            display: flex;
+            gap: var(--pad);
+            max-height: 85vh;
+        }
+    }
+}
