@@ -19,30 +19,10 @@ aside {
         width: 8em;
         height: 100vh;
     }
+}
 
-    .nav {
-        padding: var(--pad-sm);
-        box-sizing: border-box;
-        width: 100vw;
-        height: auto;
-        background-color: var(--dark-color-1);
-
-        @media (min-width: $screen-tablet) {
-            width: 8em;
-            height: 100vh;
-            position: fixed;
-            top: 0;
-        }
-    }
-
-    .logo {
-        max-width: 2em;
-
-        @media (min-width: $screen-tablet) {
-            max-width: 2.5em;
-            margin: 0 auto;
-        }
-    }
+.header{
+    margin-bottom: var(--pad-sm);
 }
 
 main {

@@ -1,0 +1,60 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: cneter;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+    background-color: var(--dark-color-1);
+
+    @media (min-width: $screen-tablet) {
+        flex-direction: column;
+        width: 8em;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+    }
+}
+
+.logo {
+    width: clamp(1.8em, 3vw, 2.5em);
+    padding: var(--pad-xs) var(--pad-sm) 0;
+
+    @media (min-width: $screen-tablet) {
+        margin: 0 auto;
+        padding: var(--pad-sm) var(--pad-sm) 0;
+    }
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 0 auto;
+    padding: 0;
+    text-align: center;
+
+    @media (min-width: $screen-tablet) {
+        margin: 0;
+        display: block;
+    }
+
+    svg {
+        max-width: clamp(1.5em, 3vw, 2.5em);
+        margin: 0 auto;
+    }
+
+    a { 
+        display: block;
+        padding: var(--pad-xs) var(--pad-xs);
+        color: var(--light-color-2);
+
+        @media (min-width: $screen-tablet) {
+            padding: var(--pad-xs) var(--pad-sm);
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: none;
+            background-color: var(--medium-color-1);
+        }
+    }
+}

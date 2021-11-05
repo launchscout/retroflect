@@ -6,13 +6,15 @@
 
 //LAYOUT STYLES
 @import
-"./layout/base";
+"./layout/base",
+"./layout/dashboards";
 
 //MODULES STYLES
 @import
 "./modules/buttons",
 "./modules/cards",
 "./modules/inputs",
+"./modules/icons",
 "./modules/links",
 "./modules/lists",
 "./modules/nav";
