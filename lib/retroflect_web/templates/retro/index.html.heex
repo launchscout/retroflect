@@ -1,10 +1,439 @@
 
 <div class="header">
   <div class="header-text">
-    <h1>Retro</h1>
+    <h1>Retro 11.26.2021</h1>
+    <h2>COA Project | Team B</h2>
   </div>
 </div>
 <div class="retro__board">
   <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status--yellow"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Delivering Value</h2>
+      <p><b>Good:</b> We deliver great stuff! We’re proud of it and our stakeholders are really happy.</p>
+      <p><b>Bad:</b> We deliver crap. We feel ashamed to deliver it. Our stakeholders hate us.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--yellow"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--yellow"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status--red"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Easy to Release</h2>
+      <p><b>Good:</b> Releasing is simple, safe, painless and mostly automated.</p>
+      <p><b>Bad:</b> Releasing is risky, painful, lots of manual work and takes forever.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status--yellow"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--yellow"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--red"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--yellow"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--yellow"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status--green"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Fun</h2>
+      <p><b>Good:</b> We love going to work and have great fun working together!</p>
+      <p><b>Bad:</b> Boooooooring…</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--green"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <%# Current Category with Form %>
+  <div class="card card--retro retro--current">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Health of Codebase</h2>
+      <p><b>Good:</b> We love going to work and have great fun working together!</p>
+      <p><b>Bad:</b> Boooooooring…</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status--submitted"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--submitted"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status--submitted"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+    <form class="retro__form">
+      <div>
+        <h3>Rate Health of Codebase</h3>
+        <div class="u-flex">
+          <div class="u-push__right--xs">
+            <label class="checkmark-container">Green
+              <input type="checkbox" checked="checked">
+              <span class="checkmark checkmark--green"></span>
+            </label>
+          </div>
+          <div class="u-push__right--xs">
+            <label class="checkmark-container">Yellow
+              <input type="checkbox" >
+              <span class="checkmark checkmark--yellow"></span>
+            </label>
+          </div>
+          <div class="u-push__right--xs">
+            <label class="checkmark-container">Red
+              <input type="checkbox" >
+              <span class="checkmark checkmark--red"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="retro__submit">
+        <div class="u-push__right--xs">
+          <button>Previous Category</button>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Learning</h2>
+      <p><b>Good:</b> We’re learning lots of interesting stuff all the time!</p>
+      <p><b>Bad:</b> We never have time to learn anything.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Mission</h2>
+      <p><b>Good:</b> We know why we are here and we’re really excited about it!</p>
+      <p><b>Bad:</b> We have no idea why we are here. There’s no high lever picture or focus. Our so-called mission is completely unclear and uninspiring.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Pawns or Players</h2>
+      <p><b>Good:</b> We are in control of our own destiny! We decide what to build and how to build it.</p>
+      <p><b>Bad:</b> We are just pawns in a game of chess with no influence over what we build or how we build it.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Speed</h2>
+      <p><b>Good:</b> We get stuff done really quickly! No waiting and no delays.</p>
+      <p><b>Bad:</b> We never seem to get anything done. We keep getting stuck or interrupted. Stories keep getting stuck on dependencies.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Suitable Process</h2>
+      <p><b>Good:</b> Our way of working fits us perfectly!</p>
+      <p><b>Bad:</b> Our way of working sucks!</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Support</h2>
+      <p><b>Good:</b> We always get great support and help when we ask for it!</p>
+      <p><b>Bad:</b> We keep getting stuck because we can’t get the support and help that we ask for.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
+  </div>
+  <div class="card card--retro">
+    <div class="retro__rating">
+      <div class="card__status"></div>
+    </div>
+    <div class="retro__category">
+      <h2 class="u-push__bottom--xxs">Teamwork</h2>
+      <p><b>Good:</b> We are a totally gelled super-team with awesome collaboration!</p>
+      <p><b>Bad:</b> We are a bunch of individuals that neither know nor care about what the other people in the squad are doing.</p>
+    </div>
+    <div class="retro__results">
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Lauren L</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Super Chris</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Brain B</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Parker R</p>
+      </div>
+      <div class="retro__member">
+        <div class="card__status"></div>
+        <p>Andrew M</p>
+      </div>
+      <div class="retro__member--absent">
+        <div class="card__status--absent"></div>
+        <p>Kati P</p>
+      </div>
+    </div>
   </div>
 </div>

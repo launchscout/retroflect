@@ -1,0 +1,47 @@
+.retro {
+    &__rating {
+        padding: 0 var(--pad-sm) 0 0;
+    }
+
+    &__results {
+        display: flex;
+        margin: 0 0 0 auto;
+        text-align: center; 
+    }
+
+    &__category {
+        max-width: 600px;
+    }
+
+    &__member {
+        margin:  0 var(--pad-xs);
+
+        &--absent {
+            margin:  0 var(--pad-xs);
+            color: var(--light-color-4);
+        }
+    }
+
+    &__form {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        -ms-flex-direction: row;
+        margin-top: var(--pad);
+        width: 100%;
+        box-sizing: border-box;
+        flex: 100%;
+    }
+
+    &__submit {
+        display: flex;
+    }
+
+    &--current {
+        border: solid 3px var(--medium-color-2);
+
+        h2 {
+            font-weight: 600;
+        }
+    }
+}
