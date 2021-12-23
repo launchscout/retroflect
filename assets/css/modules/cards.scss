@@ -19,6 +19,14 @@
       padding-top: 0;
     }
 
+    &--retro {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--pad-sm);
+    }
+
     &__header {
       position: sticky;
       display: flex;
@@ -76,5 +84,30 @@
           @extend .card__status;
           background-color: var(--red);
         }
+        &--absent {
+          @extend .card__status;
+          background-color: var(--light-color-4);
+          border-color: var(--white);
+        }
+
+        &--submitted {
+          @extend .card__status;
+          position: relative;
+          background-color: var(--medium-color-2);
+
+          &:after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 1px;
+            width: 4px;
+            height: 10px;
+            border: solid var(--light-color-2);
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+      }
     }
 }
