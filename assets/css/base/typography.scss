@@ -52,6 +52,11 @@ p {
   font-weight: 400;
 }
 
+.caption {
+  font-size: clamp(.6em, 1vw, 0.7em);
+  line-height: 1;
+}
+
 b, strong {
   font-weight: 700;
 }

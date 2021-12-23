@@ -26,3 +26,55 @@
         stroke-miterlimit: 10;
     }
 }
+
+.user {
+    &__icon {
+        width: var(--pad);
+        height: var(--pad);
+        text-align: center;
+        margin: 0 auto;
+
+        svg {
+
+        }
+
+        .head {
+            fill: var(--light-color-1);
+        }
+        .body {
+            fill: var(--medium-color-2);
+        }
+        .crown {
+            fill: var(--medium-color-2);
+        }
+    }
+
+    &--absent {
+        color: var(--light-color-4);
+
+        .user__icon {
+            .head {
+                fill: var(--light-color-4);
+            }
+            .body {
+                fill: var(--light-color-4);
+            }
+        }
+      }
+
+      &--admin {
+        color: var(--medium-color-2);
+
+        p {
+            font-weight: 600;
+        }
+
+        .user__icon {
+            .head {
+            }
+            .body {
+                fill: var(--dark-color-2);
+            }
+        }
+      }
+}
