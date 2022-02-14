@@ -1,9 +1,7 @@
-name: GitHub Actions CI
+name: Test and Deploy
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
 
 env:
@@ -120,3 +118,15 @@ jobs:
 
       - name: Run test
         run: mix test
+
+  deploy:
+    name: Deploy
+    needs: [test, static_code_analysis]
+    runs-on: ubuntu-latest
+    env:
+      FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: superfly/flyctl-actions@1.1
+        with:
+          args: "deploy"
